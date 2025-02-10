@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -56,11 +57,6 @@ main {
     flex-wrap: wrap;
 }
 
-#noticias {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #banners img {
     width: 300px;
     height: 500px;
@@ -69,11 +65,16 @@ main {
     margin-left: 40px;
 }
 
+#noticias {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
 article h1 {
     font-size: 48px;
     margin-left: 70px;
     margin-top: 120px;
-    
 }
 
 article h3 {
@@ -105,4 +106,169 @@ article h3 {
     margin-left: 40px;
     color: #4CAF50;
     font-weight: 500;
+    margin-bottom: 0px;
+}
+
+#noticias p {
+    width: 300px;
+    margin-left: 40px;
+    color: #666666;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#cursos {
+    background-color: #08860B;
+    color: white;
+    width: 100%;
+}
+
+#processos-seletivos {
+    background-color: #E4ECE6;
+    color: black;
+    width: 100%;
+}
+
+#cursos h1, #processos-seletivos h1 {
+    font-size: 48px;
+    margin-left: 70px;
+    margin-top: 90px;
+    font-weight: 700;
+}
+
+#cursos h3 {
+    font-size: 24px;
+    margin-left: 1090px;
+    margin-right: 0px;
+    margin-top: -75px;
+}
+
+#processos-seletivos h3 {
+    font-size: 24px;
+    margin-left: 1090px;
+    margin-right: 0px;
+    margin-top: -75px;
+    color: #08860B;
+}
+
+#cursos p, #processos-seletivos p {
+    width: 725px;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    line-height: 30px;
+}
+
+#primeiro-curso {
+    margin-left: 70px;
+    width: 413px;
+    height: 175px;
+    background-color: #066B09;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#primeiro-curso h5, #segundo-curso h5, #terceiro-curso h5, #quarto-curso h5 {
+    font-weight: lighter;
+    margin-left: 35px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.carga-horaria {
+    font-weight: lighter;
+    margin-left: 35px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    width: 120px;
+}
+
+.duracao {
+    font-weight: lighter;
+    margin-left: 35px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    width: 90px;
+}
+
+#primeiro-curso h2, #segundo-curso h2, #terceiro-curso h2, #quarto-curso h2 {
+    font-weight: 400;
+    margin-left: 35px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+#amostra-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#segundo-curso {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 413px;
+    height: 175px;
+    background-color: #066B09;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#terceiro-curso {
+    margin-right: 70px;
+    width: 413px;
+    height: 175px;
+    background-color: #066B09;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#quarto-curso {
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 1319px;
+    height: 175px;
+    background-color: #066B09;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#quarto-curso .duracao {
+    margin-left: 490px;
+}
+
+#opcoes-cursos, #opcoes-processos {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+select {
+    width: 1170px;
+    padding-left: 30px;
+    height: 65px;
+    font-size: 16px;
+    margin-bottom: 100px;
+    border-radius: 6px;
+    border: solid 0px;
+}
+
+button {
+    background-color: #062601;
+    color: white;
+    width: 145px;
+    height: 65px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+
 }
