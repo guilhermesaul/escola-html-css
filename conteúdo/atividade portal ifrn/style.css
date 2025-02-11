@@ -257,7 +257,7 @@ select {
     padding-left: 30px;
     height: 65px;
     font-size: 16px;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     border-radius: 6px;
     border: solid 0px;
 }
@@ -270,5 +270,108 @@ button {
     font-size: 16px;
     font-weight: bold;
     border-radius: 6px;
-
+    border: solid 0px;
 }
+
+#em-andamento {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#em-andamento h5 {
+    font-size: 24px;
+    font-weight: lighter;
+    color: gray;
+    margin-left: 70px;
+    margin-top: -5px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#nav-em-andamento h6 {
+    font-size: 16px;
+    font-weight: lighter;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+#nav-em-andamento {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    width: 87%;
+    margin-left: 70px;
+}
+
+#nav-em-andamento .espaco-nav-em-andamento {
+    margin-left: 40px;
+}
+
+#card-em-andamento h6 {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 450px;
+}
+
+#card-em-andamento h5 {
+    font-size: 24px;
+    color: #066B09;
+    font-weight: lighter;
+    margin-top: -55px;
+    margin-left: 30px;
+}
+
+#card-em-andamento .nao-edital-um {
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 0;
+    margin-top: 0px;
+    width: 200px;
+}
+#card-em-andamento .nao-edital-um-ultimo {
+    font-size: 14px;
+    margin-left: 30px;
+    margin-right: 0;
+    margin-top: 0px;
+    width: 700px;
+}
+
+#card-em-andamento .nao-edital-dois {
+    font-size: 14px;
+    margin-top: -40px;
+    width: 200px;
+    margin-left: 30px;
+}
+
+#card-em-andamento .nao-edital-dois-ultimo {
+    font-size: 14px;
+    margin-top: -40px;
+    width: 700px;
+    margin-left: 30px;
+}
+
+#card-em-andamento .edital {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    margin-left: 500px;
+    text-align: center;
+    width: 220px;
+}
+
+#card-em-andamento {
+    display: flex;
+    flex-wrap: wrap;
+    color: gray;
+    background-color: white;
+    width: 87%;
+    margin-left: 70px;
+    border-radius: 8px;
+    border-left: solid 3px #CC8E35;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
