@@ -375,3 +375,11 @@ button {
     margin-bottom: 10px;
 }
 
+#primeiro-curso:hover, #segundo-curso:hover, #terceiro-curso:hover, #quarto-curso:hover {
+    background-color: #054b07;
+}
+
+#nav-em-andamento h6:hover {
+    color: #06850a;
+    text-decoration: underline;
+}
