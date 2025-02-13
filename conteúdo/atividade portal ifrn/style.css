@@ -127,6 +127,7 @@ article h3 {
     background-color: #E4ECE6;
     color: black;
     width: 100%;
+    padding-bottom: 100px;
 }
 
 #cursos h1, #processos-seletivos h1 {
@@ -382,4 +383,34 @@ button {
 #nav-em-andamento h6:hover {
     color: #06850a;
     text-decoration: underline;
+}
+
+#campi {
+    background-color: #062601;
+    color: white;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#campi img {
+    width: 100%;
+    background-color: aqua;
+}
+
+#campi h1 {
+    font-size: 48px;
+    margin-top: -15px;
+    font-weight: 700;
+    width: 100%;
+}
+
+#campi p {
+    width: 740px;
+    font-size: 18px;
+    color: rgb(151, 151, 151);
+    margin-top: 30px;
+    margin-bottom: 45px;
+    line-height: 30px;
 }
