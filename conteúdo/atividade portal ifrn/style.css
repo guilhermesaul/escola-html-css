@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden;    
 }
 
 header {
@@ -413,4 +413,59 @@ button {
     margin-top: 30px;
     margin-bottom: 45px;
     line-height: 30px;
+}
+
+#IFRN-numeros h1 {
+    font-size: 48px;
+    margin-top: -15px;
+    font-weight: 700;
+    width: 100%;
+    margin-left: 70px;
+}
+
+#IFRN-numeros p {
+    width: 740px;
+    font-size: 18px;
+    color: gray;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    line-height: 30px;
+    margin-left: 70px;
+}
+
+#IFRN-numeros {
+    padding-top: 90px;
+    height: 200px;
+}
+
+
+#numeros .num h2 {
+    font-size: 36px;
+    width: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 0;
+}
+
+#numeros .num p {
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 0;
+    width: 300px;
+    color: black;
+}
+
+#IFRN-numeros #numeros .num {
+    width: 500px;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#numeros {
+    width: 1920px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
 }
