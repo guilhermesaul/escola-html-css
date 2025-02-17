@@ -5,7 +5,7 @@ body {
 header {
     background-color: #01467C;
     width: 100%;
-    height: 122px;
+    height: 120px;
     font-family: poppins;
     display: flex;
     
@@ -13,9 +13,9 @@ header {
 
 header img {
     width: 102px;
-    height: 102px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 62px;
 }
 
@@ -25,7 +25,7 @@ header h1 {
     width: 52px;
     line-height: 40px;
     color: white;
-    margin-top: 22px;
+    margin-top: 20px;
 }
 
 header .barra-de-pesquisa p {
@@ -37,7 +37,7 @@ header .barra-de-pesquisa {
     margin-left: 250px;
     width: 575px;
     background-color: #e4edff;
-    height: 47.5px;
+    height: 45px;
     margin-top: auto;
     margin-bottom: auto;
     align-items: center;
@@ -48,8 +48,8 @@ header .barra-de-pesquisa {
 }
 
 header .barra-de-pesquisa img {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
 }
 
 header .botao button {
@@ -57,7 +57,7 @@ header .botao button {
     color: #027bd7;
     border: solid 0px;
     width: 110px;
-    height: 47.5px;
+    height: 45px;
     font-size: 16px;
     border-radius: 3px;
     margin-left: 10px;
@@ -69,4 +69,116 @@ header .botao {
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#login {
+    background-color: #01579B;
+    width: 525px;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#login h1 {
+    color: white;
+    font-family: inter, serif;
+    font-size: 36px;
+    text-align: center;
+    height: 45px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+.input-escrever {
+    background-color: #e4edff;
+    border: solid 0px;
+    width: 440px;
+    margin-top: 30px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 1.5px 3px rgb(0, 0, 0, 0.6);
+    margin-bottom: 0;
+}
+
+.input-escrever::placeholder {
+    color: #027BD7;
+    font-size: 16px;
+    padding-left: 13px;
+    font-family: inter, serif;
+}
+
+#email, #senha {
+    background: url(imagens/email.png) no-repeat;
+    background-color: #e4edff;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+    background-size: 24px 19px;
+}
+
+#senha {
+    background-image: url(imagens/olhinho-senha.png);
+    background-size: 25px 17px;
+}
+
+#input-marcar {
+    width: 18px;
+    height: 15px;
+    margin-left: 40px;
+    margin-top: 17.5px;
+}
+
+label {
+    color: white;
+    font-weight: 200;
+    font-family: inter, serif;
+    margin-top: 16px;   
+}
+
+p, #p-final {
+    color: white;
+    font-weight: 200;
+    font-family: inter, serif;
+    margin-right: 40px;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+#senhas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#botao-form {
+    width: 180px;
+    height: 35px;
+    border-radius: 4px;
+    border: solid 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    background-color: #529fff;
+    color: white;
+    font-family: inter, serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.6);
+}
+
+#p-final {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    margin-top: 10px;
 }
