@@ -1,50 +1,73 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-100: #E4EDFF;
+    --azul-300: #529fff;
+    --azul-400: #027bd7;
+    --azul-500: #01579B;
+    --preto: #000000;
+    --branco: #ffffff;
 }
 
 header {
-    background-color: #01467C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--azul-500);
     width: 100%;
     height: 120px;
-    font-family: poppins;
-    display: flex;
-    
+    font-family: 'Poppins';
+
 }
 
 header img {
     width: 102px;
     height: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 62px;
 }
 
 header h1 {
     font-size: 48px;
-    margin-left: 12px;
-    width: 52px;
     line-height: 40px;
-    color: white;
-    margin-top: 20px;
+    color: var(--branco);
 }
 
-header .barra-de-pesquisa p {
-    color: #027bd7;
-    margin-left: 25px;
-}
-
-header .barra-de-pesquisa {
-    margin-left: 250px;
-    width: 575px;
-    background-color: #e4edff;
-    height: 45px;
-    margin-top: auto;
-    margin-bottom: auto;
-    align-items: center;
+.barra-de-pesquisa {
     display: flex;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    background-color: var(--azul-100);
     border-radius: 50px;
-    align-content: center;
-    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.6);
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.6); 
+
+}
+
+.barra-de-pesquisa > img:hover {
+    cursor: pointer;
+}
+
+.barra-de-pesquisa > input {
+    display: flex;
+    align-items: center;
+    background-color: var(--azul-100);
+    width: 700px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 16px;
+    font-family: 'Poppins', monospace;
+}
+
+header .barra-de-pesquisa > input::placeholder  {
+    color: var(--azul-400);
+    font-family: 'Poppins', monospace;
 }
 
 header .barra-de-pesquisa img {
@@ -52,75 +75,78 @@ header .barra-de-pesquisa img {
     height: 24px;
 }
 
-header .botao button {
-    background-color: #e4edff;
-    color: #027bd7;
-    border: solid 0px;
-    width: 110px;
-    height: 45px;
-    font-size: 16px;
-    border-radius: 3px;
-    margin-left: 10px;
-}
-
-header .botao {
-    margin-left: 225px;
+header .botoes {
+    display: flex;
     justify-items: center;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    gap: 20px;
 }
 
-#login {
-    background-color: #01579B;
-    width: 525px;
-    height: 550px;
-    border-radius: 10px;
+header .botoes button {
+    background-color: var(--azul-100);
+    color: var(--azul-400);
+    border: solid 0px;
+    width: 150px;
+    height: 55px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.logo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 16px;
 }
 
 main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
+#login {
+    display: flex;
+    justify-content: ;
+    background-color: var(--azul-500);
+    width: 550px;
+    height: 675px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
 #login h1 {
-    color: white;
-    font-family: inter, serif;
+    color: var(--branco);
+    font-family: 'Poppins', serif;
     font-size: 36px;
     text-align: center;
     height: 45px;
-    margin-top: -100px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 75px;
 }
 
 .input-escrever {
-    background-color: #e4edff;
+    background-color: var(--azul-100);
     border: solid 0px;
-    width: 440px;
+    width: 470px;
     margin-top: 30px;
-    height: 40px;
+    height: 45px;
     border-radius: 4px;
     box-shadow: 0px 1.5px 3px rgb(0, 0, 0, 0.6);
     margin-bottom: 0;
+    border: none;
+    outline: none;
+    padding: 0 16px 0 16px;
 }
 
 .input-escrever::placeholder {
-    color: #027BD7;
-    font-size: 16px;
-    padding-left: 13px;
-    font-family: inter, serif;
+    color: var(--azul-400);
 }
 
 #email, #senha {
     background: url(imagens/email.png) no-repeat;
-    background-color: #e4edff;
+    background-color: var(--azul-100);
     background-position-x: calc(100% - 10px);
     background-position-y: center;
     background-size: 24px 19px;
@@ -138,17 +164,18 @@ main {
     margin-top: 17.5px;
 }
 
-label {
-    color: white;
+#label-senha {
+    color: var(--branco);
     font-weight: 200;
-    font-family: inter, serif;
-    margin-top: 16px;   
+    font-family: 'Inter', serif;
+    margin-top: 16px;
+    margin-left: 7px;
 }
 
 p, #p-final {
-    color: white;
+    color: var(--branco);
     font-weight: 200;
-    font-family: inter, serif;
+    font-family: 'Inter', serif;
     margin-right: 40px;
     margin-left: auto;
     margin-top: 16px;
@@ -160,20 +187,18 @@ p, #p-final {
 }
 
 #botao-form {
-    width: 180px;
-    height: 35px;
+    text-align: center;
+    width: 200px;
+    height: 43px;
     border-radius: 4px;
     border: solid 0px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 15px;
-    background-color: #529fff;
-    color: white;
-    font-family: inter, serif;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0, 0.6);
+    margin-top: 25px;
+    font-family: 'Inter', serif;
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
-    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.6);
+    background-color: var(--azul-300);
+    color: var(--branco);
 }
 
 #p-final {
