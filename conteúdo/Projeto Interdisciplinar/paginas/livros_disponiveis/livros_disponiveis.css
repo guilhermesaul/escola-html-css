@@ -1,7 +1,6 @@
 header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     background-color: var(--azul-600);
     width: 100%;
@@ -13,6 +12,7 @@ header {
 header img {
     width: 102px;
     height: 100px;
+    margin-left: 110px;
 }
 
 header h1 {
@@ -28,6 +28,7 @@ header h1 {
     background-color: var(--azul-100);
     border-radius: 50px;
     box-shadow: 0px 1.5px 4px rgb(0, 0, 0, 0.6); 
+    margin-left: 200px;
 
 }
 
@@ -39,7 +40,7 @@ header h1 {
     display: flex;
     align-items: center;
     background-color: var(--azul-100);
-    width: 700px;
+    width: 850px;
     height: 55px;
     border: none;
     border-radius: 50px;
@@ -56,27 +57,6 @@ header .barra-de-pesquisa > input::placeholder  {
 header .barra-de-pesquisa img {
     width: 24px;
     height: 24px;
-}
-
-button {
-    cursor: pointer;
-}
-
-header .botoes {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
-}
-
-header .botoes button {
-    background-color: var(--azul-100);
-    color: var(--azul-400);
-    border: solid 0px;
-    width: 150px;
-    height: 55px;
-    font-size: 16px;
-    border-radius: 3px;
 }
 
 .logo {
@@ -104,43 +84,79 @@ nav p {
 
 main {
     display: flex;
-    margin: 90px 0 0 110px
+    margin: 100px 0 0 165px
 }
 
-main section > h2 {
+main section > h1 {
+    font-weight: bold;
+    font-size: 48px;
     font-family: 'Poppins', monospace;
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 45px;
     color: var(--azul-400);
 }
 
-.livros {
-    display: flex;
-    justify-content: space-between;
-    width: 1550px;
-}
-
-.livros > div {
+.card-livros {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 45px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.25);
+    width: 340px;
+    height: 560px;
+    background-color: var(--branco);
 }
 
-.livros div > img {
-    width: 255px;
+.card-livros img {
+    width: 250px;
     height: 370px;
+    margin-top: 47.5px;
 }
 
-.livros div > button {
-    background-color: var(--azul-500);
-    color: var(--branco);
-    width: 222px;
-    height: 41px;
+.card-livros > h3 {
+    font-weight: 600;
+    font-size: 26px;
     font-family: 'Poppins', monospace;
-    font-size: 20px;
+    color: var(--azul-500);
+    margin-top: 5px;
+    height: 27.5px;
+}
+
+.card-livros > h4 {
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Poppins', monospace;
+    color: var(--azul-400);
+    height: 27.5px;
+}
+
+.card-livros > h5 {
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Inter', serif;
+    color: var(--azul-300);
+    height: 17px;
+}
+
+.card-livros button {
     border: none;
-    border-radius: 3.5px;
-    margin-top: 24px;
-    margin-bottom: 50px;
+    border-radius: 3px;
+    background-color: var(--azul-500);
+    font-family: 'Poppins', monospace;
+    font-size: 14px;
+    font-weight: bolder;
+    color: var(--branco);
+    width: 164px;
+    height: 29px;
+    margin-top: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 65px;
+}
+
+button, img {
+    cursor: pointer;
 }
