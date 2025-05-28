@@ -1,0 +1,19 @@
+header p {
+  background-color: rgb(172, 172, 172);
+}
+
+section h2 {
+  color: blue;
+  font-size: 24px;
+}
+
+.section2 li {
+  font-size: 18px;
+  color: yellow;
+  background-color: black;
+}
+
+footer p {
+  text-align: center;
+  font-style: italic;
+}

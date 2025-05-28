@@ -1,0 +1,72 @@
+/* Estilo geral do layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.posts {
+  flex: 1; /* A coluna de posts vai crescer para ocupar o espaço disponível */
+}
+.images {
+  flex: 0 0 30%; /* A coluna de imagens ocupa 30% da largura */
+}
+.post {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.post h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+.post .summary {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.post .info {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 10px;
+}
+.image-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.image-item .author {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 10px;
+}
+/* Responsividade para telas pequenas */
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column; /* Organiza em coluna para telas menores */
+  }
+  .posts {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .images {
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+estudar regras (@)
+@import url()
+@media
+@media screen
+@media print
+@media screen and (orientation: landscape)
+@media screen and (max-width: 900px)
+
+exemplos: 
+@import url('./screen.css' screen)
+@import url('./print.css' print)
+
+@media screen {
+    h1 {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media print {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    h1 {
+        background-color: white;
+        color: blue
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        background-color: ink;
+        color: black;
+    }
+}

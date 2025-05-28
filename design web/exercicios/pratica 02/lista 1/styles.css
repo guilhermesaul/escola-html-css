@@ -1,0 +1,26 @@
+h1 {
+  color: blue;
+  font-family: sans-serif;
+}
+
+.intro {
+  font-style: italic;
+  line-height: 1.5px;
+}
+
+.item {
+  background-color: gray;
+}
+
+.destacado {
+  background-color: yellow;
+}
+
+a:hover {
+  color: red;
+}
+
+ol li {
+  font-weight: bold;
+  color: green;
+}

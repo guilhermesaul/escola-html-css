@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ddaa00;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  font-weight: 900;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #cccccc;
+  width: 100%;
+  height: 85px;
+  justify-content: space-around;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: white;
+  width: 350px;
+  height: 65px;
+  border: solid 1.5px black;
+}
+
+nav div p {
+  font-size: 24px;
+  color: #ddaa00;
+}
+
+.corpo {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #808080;
+  width: 100%;
+  height: 610px;
+  justify-content: space-around;
+}
+
+.corpo .cards {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 620px;
+  height: 470x;
+  justify-content: center;
+}
+
+img {
+  width: 585px;
+  height: 300px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.cards p {
+  width: 90%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.cards button {
+  border: solid 1.5px black;
+  width: 585px;
+  margin-top: 75px;
+  height: 50px;
+  font-size: 18px;
+}
+
+#rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddaa00;
+  color: white;
+  height: 127px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu com Flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn">Menu</label>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Bem-vindo ao Meu Site</h1>
+      <p>Explore as seções acima para saber mais!</p>
+    </main>
+    <footer>
+      <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+1. Qual propriedade do Flexbox você usaria para alinhar os itens da lista horizontalmente?
+flex-direction: row;
+
+2. Como ocultar o menu inicialmente em telas pequenas?
+Usando display: none;
+
+3. Que seletor e propriedade seriam usados para alterar a cor do link ao passar o mouse?
+a:hover {
+  color: red;
+}
+
+4. Como garantir que os itens do menu fiquem visíveis quando o botão de "Menu" for clicado?
+#menu-toggle:checked + .menu-btn + ul {
+  display: flex;
+}
+-->
