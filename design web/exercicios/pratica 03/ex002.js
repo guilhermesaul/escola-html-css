@@ -27,14 +27,16 @@ if (n3 > n1 && n3 > n2) {
 }
 
 // Questão 4)
-for (i=1; i<11; i++) {
-    console.log(i)
+for (ii = 1; ii < 11; ii++) {
+  console.log(ii);
 }
 
 // Questão 5)
 
-let fatorial = 5
-while (fatorial !=0 ) {
-    fatorial--
-    
+let fatorial = 5;
+let i = fatorial;
+while (i != 2) {
+  i--;
+  fatorial *= i;
+  console.log(fatorial);
 }
