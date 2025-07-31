@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        button {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="num1"> Digite a primeira nota </label>
+        <input type="number" name="num1" id="num1" />
+      </div>
+      <br />
+      <div>
+        <label for="num2"> Digite a segunda nota </label>
+        <input type="number" name="num2" id="num2" />
+      </div>
+      <button id="somar" style="margin-top: 20px">Analisar</button>
+
+      <h1 id="h1"></h1>
+    </form>
+
+    <script>
+      let button = document.getElementById("somar");
+
+      button.onclick = function () {
+        event.preventDefault();
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let h1 = document.getElementById("h1");
+
+        let num1Inteiro = Number(num1);
+        let num2Inteiro = Number(num2);
+        let soma = num1Inteiro + num2Inteiro;
+        let media = soma / 2;
+
+        const msgAprovado = `Você tem uma media de ${media} pontos e está aprovado`;
+        const msgReprovado = `Você tem uma media de ${media} pontos e está reprovado`;
+        if (media >= 60) {
+          h1.innerText = msgAprovado;
+        } else {
+          h1.innerText = msgReprovado;
+        }
+      };
+    </script>
+  </body>
+</html>
